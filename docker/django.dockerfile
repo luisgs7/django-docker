@@ -11,8 +11,8 @@ RUN apk add python3-dev postgresql-dev
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-RUN python manage.py collectstatic --noinput
-RUN python manage.py migrate
+#RUN python manage.py collectstatic --noinput Production
+#RUN python manage.py migrate Development
 
 ENTRYPOINT gunicorn --bind 0.0.0.0:8000 django_docker.wsgi
 EXPOSE 8000

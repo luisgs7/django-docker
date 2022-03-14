@@ -3,7 +3,7 @@ LABEL maintainer="github.com/luisgs7"
 ENV PYTHONUBUFFERED 1
 ENV LANG C.UTF-8
 
-COPY DEBIAN_FRONTEND=noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 COPY /docker/config/nginx.conf /etc/nginx/nginx.conf
 COPY . /var/www
 
