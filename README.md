@@ -73,3 +73,20 @@ Desconectar da nova faixa de rede de ips
 ```
 docker network disconnect bridge container_3__bridge_new
 ```
+
+## Docker-compose
+
+Gerar os containers a partir de um dockerfile
+```
+docker-compose build
+```
+
+Up nos containers criados a partid do dockerfile
+```
+docker-compose up -d 
+```
+
+Para serviços docker
+```
+docker-compose down
+```
