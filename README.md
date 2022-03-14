@@ -2,7 +2,7 @@
 
 Build de uma imagem docker a partir do Dockerfile
 ```
-docker build -t guniversity/<name_container>:v1 .
+docker build -f Dockerfile -t guniversity/<name_container>:v1 .
 ```
 
 Run do container a partir do nome da imagem
